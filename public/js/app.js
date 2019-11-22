@@ -1,5 +1,3 @@
-console.log("Client side JS file is loading");
-
 fetch("http://localhost:5000/weather?address=lagos").then(response => {
   response.json().then(data => {
     const { error, location, forecast } = data;
