@@ -1,14 +1,3 @@
-fetch("http://localhost:5000/weather?address=lagos").then(response => {
-  response.json().then(data => {
-    const { error, location, forecast } = data;
-    if (error) {
-      console.log(error);
-    } else {
-      console.log({ location, forecast });
-    }
-  });
-});
-
 const weatherForm = document.querySelector("form");
 const search = document.querySelector("input");
 const messageOne = document.querySelector("#message-1");
